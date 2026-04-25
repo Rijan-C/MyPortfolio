@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rijan Chudal — Frontend Developer & Video Editor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="nav-logo">Rijan<span></span></a>
+    <ul class="nav-links">
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#creative">Creative</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact" class="nav-hire">
+          <span class="nav-hire-dot"></span>
+          Available for work
+        </a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-orb"></div>
+    <div class="hero-orb2"></div>
+
+    <!-- LEFT -->
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Based in Bhaktapur, Nepal · Open to remote
+      </div>
+
+      <h1 class="hero-title">
+        Rijan<br>
+        <span class="line2">Chudal</span>
+      </h1>
+
+      <div class="hero-roles">
+        <span class="role-pill r1">MERN Developer</span>
+        <span class="role-divider"></span>
+        <span class="role-pill r2">Video Editor</span>
+        <span class="role-divider"></span>
+        <span class="role-pill r3">Content Creator</span>
+      </div>
+
+      <p class="hero-sub">
+        I build modern, fast, and user-focused web applications while crafting engaging digital content. From full-stack
+        MERN projects to short-form video — I ship things that work and look great.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          See my work
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn-ghost">
+          Get in touch
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT: Animated Code Window -->
+    <div class="hero-right">
+      <div class="code-window">
+        <div class="code-titlebar">
+          <span class="code-dot red"></span>
+          <span class="code-dot amber"></span>
+          <span class="code-dot green"></span>
+          <span class="code-filename">rijan.js</span>
+        </div>
+        <div class="code-body" id="codeBody"></div>
+        <div class="code-statusbar">
+          <div class="status-left">
+            <span class="status-dot"></span>
+            <span class="status-text">ready</span>
+          </div>
+          <span class="status-lang">JavaScript</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="scroll-bar"></div>
+      <span class="scroll-text">Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <div class="marquee-item"><span>MongoDB</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>Express.js</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>React</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>Node.js</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>UI/UX Design</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>Video Editing</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>Responsive Design</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>JavaScript</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>TikTok</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>MongoDB</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>Express.js</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>React</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>Node.js</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>UI/UX Design</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>Video Editing</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>Responsive Design</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>JavaScript</span><span class="mdot">·</span></div>
+      <div class="marquee-item"><span>TikTok</span><span class="mdot">·</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+      <div class="about-left">
+        <div class="section-eyebrow reveal">About me</div>
+        <h2 class="section-title reveal reveal-d1">Developer.<br><em>Creator.</em></h2>
+        <p class="about-text reveal reveal-d2">
+          I'm Rijan — a Computer Science student at Pokhara University and a self-taught full-stack MERN developer. I
+          love building fast, clean, and accessible web experiences from scratch.
+        </p>
+        <p class="about-text reveal reveal-d3">
+          On the creative side, I produce short-form video content on TikTok — skilled in motion graphics, text
+          animations, pacing and visual storytelling. I bring the same eye for detail to both code and content.
+        </p>
+
+        <div class="skills-section reveal reveal-d4">
+          <div class="skills-label">Tech Stack</div>
+          <div class="skills-wrap">
+            <span class="skill-chip highlight">MongoDB</span>
+            <span class="skill-chip highlight">Express.js</span>
+            <span class="skill-chip highlight">React</span>
+            <span class="skill-chip highlight">Node.js</span>
+            <span class="skill-chip">JavaScript</span>
+            <span class="skill-chip">HTML / CSS</span>
+            <span class="skill-chip">REST APIs</span>
+            <span class="skill-chip">Responsive Design</span>
+            <span class="skill-chip">UI/UX Design</span>
+            <span class="skill-chip">Git / GitHub</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-d2">
+        <div class="profile-card">
+          <div class="profile-img-placeholder">
+            <img src="assets/port.png" alt="">
+          </div>
+          <div class="profile-info">
+            <div class="profile-name">Rijan Chudal</div>
+            <div class="profile-role">Frontend Developer & Video Editor · Bhaktapur, NP</div>
+            <div class="profile-links">
+              <a href="https://github.com/Rijan-C" target="_blank" class="profile-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z" />
+                </svg>
+                GitHub
+              </a>
+              <a href="https://www.tiktok.com/@fxbyrijan" target="_blank" class="profile-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.26 8.26 0 004.84 1.55V6.78a4.85 4.85 0 01-1.07-.09z" />
+                </svg>
+                TikTok
+              </a>
+              <a href="mailto:chudalrijan@gmail.com" class="profile-link">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                Email
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats-row">
+    <div class="stat-cell reveal">
+      <div class="stat-num">3<span>+</span></div>
+      <div class="stat-label">Projects shipped</div>
+    </div>
+    <div class="stat-cell reveal reveal-d1">
+      <div class="stat-num">MERN<span></span></div>
+      <div class="stat-label">Full-stack focus</div>
+    </div>
+    <div class="stat-cell reveal reveal-d2">
+      <div class="stat-num">2024<span>–</span></div>
+      <div class="stat-label">Currently studying</div>
+    </div>
+    <div class="stat-cell reveal reveal-d3">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Ideas in progress</div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <div class="projects-header">
+      <div>
+        <div class="section-eyebrow reveal">Dev work</div>
+        <h2 class="section-title reveal reveal-d1">Projects</h2>
+      </div>
+      <a href="https://github.com/Rijan-C" target="_blank" class="view-all reveal">
+        All on GitHub
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+          <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- FEATURED: Jodify -->
+      <a class="project-card wide reveal" href="#" target="_blank">
+        <div class="project-img">
+          <div class="project-img-placeholder pimg1">
+            <img src="assets/jodify.png" alt="">
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="ptag p">Featured</span>
+              <span class="ptag">Full-stack</span>
+            </div>
+            <div class="project-arrow">↗</div>
+          </div>
+          <h3 class="project-title">Jodify — Matrimonial Platform</h3>
+          <p class="project-desc">A full-stack matrimonial website with profile browsing and matching features. Built
+            with a responsive UI and user-focused design for smooth navigation across all devices.</p>
+          <div class="project-stack">
+            <span class="stack-label">Stack</span>
+            <span class="stack-chip">MySQL</span>
+            <span class="stack-chip">PHP</span>
+            <span class="stack-chip">HTML</span>
+            <span class="stack-chip">JavaScript</span>
+            <span class="stack-chip">Tailwind CSS</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- To Do App -->
+      <a class="project-card reveal reveal-d1" href="#" target="_blank">
+        <div class="project-img">
+          <div class="project-img-placeholder pimg2">
+            <img src="assets/Screenshot 2026-04-22 225439.png" alt="">
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="ptag g">Tool</span>
+              <span class="ptag">JavaScript</span>
+            </div>
+            <div class="project-arrow">↗</div>
+          </div>
+          <h3 class="project-title">To Do App</h3>
+          <p class="project-desc">A simple and intuitive to-do list application with task management and persistence.
+            Built with a clean, modern UI.</p>
+          <div class="project-stack">
+            <span class="stack-label">Stack</span>
+            <span class="stack-chip">JavaScript</span>
+            <span class="stack-chip">HTML</span>
+            <span class="stack-chip">CSS</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Weather App -->
+      <a class="project-card reveal reveal-d2" href="#" target="_blank">
+        <div class="project-img">
+          <div class="project-img-placeholder pimg3">
+            <img src="assets/Screenshot 2026-04-22 224855.png" alt="">
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="ptag r">API</span>
+              <span class="ptag">JavaScript</span>
+            </div>
+            <div class="project-arrow">↗</div>
+          </div>
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-desc">Fetches live weather data using a public API. Shows current conditions, temperature,
+            and forecasts with a clean UI.</p>
+          <div class="project-stack">
+            <span class="stack-label">Stack</span>
+            <span class="stack-chip">JavaScript</span>
+            <span class="stack-chip">API</span>
+            <span class="stack-chip">HTML/CSS</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Landing Pages -->
+      <a class="project-card reveal reveal-d1" href="#" target="_blank">
+        <div class="project-img">
+          <div class="project-img-placeholder pimg4">
+            <img src="assets/h8.png" alt="">
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-top">
+            <div class="project-tags">
+              <span class="ptag p">Collection</span>
+              <span class="ptag">HTML/CSS</span>
+            </div>
+            <div class="project-arrow">↗</div>
+          </div>
+          <h3 class="project-title">Landing Pages Collection</h3>
+          <p class="project-desc">Multiple responsive landing pages built for various use cases — focused on clean
+            layouts, cross-device compatibility, and conversion design.</p>
+          <div class="project-stack">
+            <span class="stack-label">Stack</span>
+            <span class="stack-chip">HTML</span>
+            <span class="stack-chip">CSS</span>
+            <span class="stack-chip">JavaScript</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- CREATIVE WORK -->
+  <section class="creative" id="creative">
+    <div class="creative-inner">
+      <div class="section-eyebrow reveal">Beyond code</div>
+      <h2 class="section-title reveal reveal-d1">Creative <em>work</em></h2>
+
+      <div class="creative-grid">
+        <div class="creative-text">
+          <p class="creative-desc reveal reveal-d1">
+            When I'm not writing code, I create short-form video content on TikTok. Skilled in pacing, transitions, text
+            animations, and visual storytelling — the same principles that make great UI also make great video.
+          </p>
+          <p class="creative-desc reveal reveal-d2">
+            I build consistent, high-quality content with a focus on motion graphics basics and creative editing
+            techniques.
+          </p>
+          <a href="https://www.tiktok.com/@fxbyrijan" target="_blank" class="tiktok-link reveal reveal-d2">
+            <div class="tiktok-icon">tt</div>
+            @fxbyrijan on TikTok
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+
+          <div class="creative-skills reveal reveal-d3">
+            <div class="cskill-item">
+              <span class="cskill-name">Video Editing</span>
+              <div class="cskill-bar">
+                <div class="cskill-fill" style="width:85%" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="cskill-item">
+              <span class="cskill-name">Motion Graphics</span>
+              <div class="cskill-bar">
+                <div class="cskill-fill" style="width:70%" data-width="70%"></div>
+              </div>
+            </div>
+            <div class="cskill-item">
+              <span class="cskill-name">Visual Storytelling</span>
+              <div class="cskill-bar">
+                <div class="cskill-fill" style="width:90%" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="cskill-item">
+              <span class="cskill-name">Short-form Content</span>
+              <div class="cskill-bar">
+                <div class="cskill-fill" style="width:88%" data-width="88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-grid reveal reveal-d2">
+          <div class="video-thumb video-pv1">
+            <img src="assets/creative/Screenshot 2026-04-25 150005.png" alt="">
+          </div>
+          <div class="video-thumb video-pv2">
+            <img src="assets/creative/Screenshot 2026-04-25 150018.png" alt="">
+          </div>
+          <div class="video-thumb video-pv3">
+            <img src="assets/creative/Screenshot 2026-04-25 150025.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="edu-section">
+    <div class="section-eyebrow reveal">Background</div>
+    <h2 class="section-title reveal reveal-d1">Education & <em>languages</em></h2>
+
+    <div class="edu-grid">
+      <div class="edu-card reveal reveal-d1">
+        <div class="edu-uni">Pokhara University</div>
+        <div class="edu-degree">BSc. Computer Science & IT</div>
+        <div class="edu-years">2024 – 2028 · In progress</div>
+        <div class="edu-desc">Studying core CS fundamentals, algorithms, and software engineering. Supplementing
+          coursework with self-driven full-stack development and UI/UX practice.</div>
+      </div>
+
+      <div class="reveal reveal-d2">
+        <div class="section-eyebrow" style="margin-bottom: 20px;">Languages</div>
+        <div class="lang-list">
+          <div class="lang-item">
+            <span class="lang-name">English</span>
+            <span class="lang-level">Professional</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">Nepali</span>
+            <span class="lang-level">Native</span>
+          </div>
+        </div>
+
+        <div style="margin-top: 40px;">
+          <div class="section-eyebrow" style="margin-bottom: 16px;">Location</div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div
+              style="width:36px;height:36px;background:var(--surface);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 1a5 5 0 015 5c0 3.5-5 9-5 9S3 9.5 3 6a5 5 0 015-5z" stroke="currentColor"
+                  stroke-width="1.2" />
+                <circle cx="8" cy="6" r="1.5" stroke="currentColor" stroke-width="1.2" />
+              </svg>
+            </div>
+            <div>
+              <div style="font-size:14px;font-weight:500;">New Thimi, Bhaktapur</div>
+              <div style="font-size:12px;color:var(--text-muted);">Nepal · Open to remote work</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-orb"></div>
+    <h2 class="reveal">Let's <span class="grad">work</span><br>together</h2>
+    <p class="contact-sub reveal reveal-d1">
+      Available for freelance projects, collaborations, and full-time roles. Let's build something great.
+    </p>
+    <div class="contact-cards reveal reveal-d2">
+      <a href="mailto:chudalrijan@gmail.com" class="contact-card">
+        <div class="contact-card-icon">✉️</div>
+        chudalrijan@gmail.com
+      </a>
+      <a href="tel:+9779847776887" class="contact-card">
+        <div class="contact-card-icon">📱</div>
+        +977 9847776887
+      </a>
+      <a href="https://github.com/Rijan-C" target="_blank" class="contact-card">
+        <div class="contact-card-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1.01.07 1.54 1.04 1.54 1.04.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0112 6.8c.85 0 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10.01 10.01 0 0022 12c0-5.52-4.48-10-10-10z" />
+          </svg>
+        </div>
+        github.com/Rijan-C
+      </a>
+      <a href="https://www.tiktok.com/@fxbyrijan" target="_blank" class="contact-card">
+        <div class="contact-card-icon" style="background:rgba(250,109,154,0.1);color:#fc9cbb;">tt</div>
+        @fxbyrijan
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Rijan<span></span></div>
+    <div class="footer-right">© 2025 Rijan Chudal · Built with ♥</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
